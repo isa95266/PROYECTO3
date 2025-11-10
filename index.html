@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caja de Herramientas 3D</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Caja 3D -->
+    <div class="box" id="box">
+      <div class="box-top"></div>
+      <div class="box-front"></div>
+      <div class="box-side"></div>
+    </div>
+
+    <!-- Zona donde aparecerán las cartas -->
+    <div class="cards-area" id="cardsArea"></div>
+
+    <!-- Panel lateral -->
+    <div class="panel">
+      <h2>Crear una carta</h2>
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" placeholder="Ejemplo: Organización del tiempo">
+      
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" placeholder="Escribe la estrategia o reflexión..."></textarea>
+
+      <div class="buttons">
+        <button id="addCard">➕ Agregar carta</button>
+        <button id="removeLast">🔙 Eliminar última</button>
+        <button id="clearAll">🧹 Eliminar todas</button>
+        <button id="startAnim">🚀 Iniciar animación</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
